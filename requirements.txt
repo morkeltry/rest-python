@@ -1,2 +1,5 @@
 Flask==1.0.2
 markdown==2.6.11
+flask_restful==0.3.6
+
+pandas==0.23.3

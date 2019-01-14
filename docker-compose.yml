@@ -1,9 +1,14 @@
-version: "3.6"
+version: "2.4"
 
 services:
   device-registry:
+    container_name: serve_titles
     build: .
     volumes:
       - .:/usr/src/app/
     ports:
       - 5000:80
+    cpus: 0.50
+    mem_limit: 6g
+    memswap_limit: 12g
+    # NB swap does not seem to show in docker stats
